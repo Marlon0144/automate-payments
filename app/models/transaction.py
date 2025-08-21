@@ -1,8 +1,7 @@
 from sqlalchemy import Column, Integer, String, Float
-from app.models import Base
+from app.database import Base
 
-#I need to say that this is a declarative base for SQLAlchemy models
-Base = declarative_base()
+
 
 class Transaction (Base):
     __tablename__ = "transactions"
